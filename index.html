@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valentino Melia | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav class="nav">
+            <a href="#hero" class="logo">Portfolio</a>
+            <div class="links">
+                <a href="#sobre-mi">Sobre mí</a>
+                <a href="#proyectos">Proyectos</a>
+                <a href="#habilidades">Habilidades</a>
+                <a href="#contacto">Contacto</a>
+                <a href="inspiracion.html">Inspiración</a>
+                <button id="theme-btn" class="theme-btn">🌙 <span id="theme-text">Modo oscuro</span></button>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="hero" class="hero">
+            <div class="hero-info">
+                <h1>Valentino Melia</h1>
+                <h2>Estudiante de Programación en la Técnica N°5 de Berazategui.</h2>
+                <p>Desarrollo sitios web funcionales, prolijos y adaptables a cualquier pantalla.</p>
+                <a href="#proyectos" class="btn">Ver Proyectos</a>
+            </div>
+            <img src="img/IMG_8882.jpeg" alt="Foto de Valentino Melia" class="avatar" onerror="this.src='https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=300&auto=format&fit=crop&q=80'">
+        </section>
+
+        <section id="sobre-mi" class="sec">
+            <h3>Sobre mí</h3>
+            <p style="margin-bottom: 1rem;">Soy Valentino Melia, estoy en 6° año de Programación. Me gusta armar páginas web sean dinámicas o estaticas.</p>
+            <p>Me gusta aprender cosas nuevas y ponerme a resolver los problemas que van saltando mientras programo. Sé que todavía me falta bastante, pero me gusta practicar y hacer proyectos.</p>
+        </section>
+
+        <section id="proyectos" class="sec">
+            <h3>Proyectos</h3>
+            <div class="grid">
+                <article class="card">
+                    <img src="img/tienda-instrumentos.jpg" alt="Captura Tienda de Instrumentos Musicales" onerror="this.src='https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=400&auto=format&fit=crop&q=80'">
+                    <h4>Tienda de Instrumentos Musicales E-commerce Personal (Mayo 2026)</h4>
+                    <p>Sitio web de comercio electrónico de instrumentos musicales, diseñado con diseño responsivo adaptado a dispositivos móviles.</p>
+                    <div class="tags"><span>HTML</span><span>CSS</span></div>
+                    <a href="https://arpegiocenter.netlify.app" target="_blank">Ver página</a>
+                </article>
+
+                <article class="card">
+                    <img src="img/calculadora.jpg" alt="Captura Calculadora JS" onerror="this.src='https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?w=400&auto=format&fit=crop&q=80'">
+                    <h4>Calculadora JS (Septiembre 2026)</h4>
+                    <p>Calculadora web desarrollada implementando funciones reutilizables en JavaScript para el manejo de operaciones matemáticas y eventos de pantalla.</p>
+                    <div class="tags"><span>HTML</span><span>CSS</span><span>JS</span></div>
+                    <a href="https://calculadoradf.netlify.app/" target="_blank">Ver página</a>
+                </article>
+
+                <article class="card">
+                    <img src="img/tienda-dinamica.jpg" alt="Captura Tienda Dinámica con Carrito y Carrusel" onerror="this.src='https://images.unsplash.com/photo-1522199755839-a2bacb67c546?w=400&auto=format&fit=crop&q=80'">
+                    <h4>Tienda Dinámica con Carrito y Carrusel (Noviembre 2026)</h4>
+                    <p>E-commerce interactivo con carrusel de productos, carrito de compras flotante y cálculo automático del total.</p>
+                    <div class="tags"><span>HTML</span><span>CSS</span><span>JS</span></div>
+                    <a href="https://webdinamicadf.netlify.app/" target="_blank">Ver página</a>
+                </article>
+            </div>
+        </section>
+
+        <section id="habilidades" class="sec">
+            <h3>Habilidades</h3>
+            <ul class="skills">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>Git & GitHub</li>
+                <li>Bases de Datos (SQL / MySQL)</li>
+                <li>Programación Orientada a Objetos</li>
+                <li>Arduino</li>
+                <li>Figma</li>
+            </ul>
+        </section>
+
+        <section id="contacto" class="sec">
+            <h3>Contacto</h3>
+            <form action="https://formspree.io/f/xkjrrydy" method="POST" class="form" id="form">
+                <label>Nombre <input type="text" name="nombre" required></label>
+                <label>Email <input type="email" name="email" id="email" required></label>
+                <label>Mensaje <textarea name="mensaje" id="mensaje" rows="3" required></textarea></label>
+                <p id="error" class="error"></p>
+                <button type="submit" class="btn">Enviar mensaje</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2026 Valentino Melia — <a href="inspiracion.html">¿En qué me inspiré?</a></p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
